@@ -44,14 +44,21 @@ body {
     padding-top: 33px;
 }
 
-@media (max-width: 700px) {
+.left-panel {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
     .container {
         display: block;
         text-align: center;
     }
-}
 
-.left-panel {}
+    .left-panel {
+        margin-right: 0px;
+    }
+}
 
 .avatar {
     margin: auto;
@@ -63,7 +70,6 @@ body {
 .info {
     align-content: center;
     display: block;
-    margin-right: 20px;
     box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -163,7 +169,7 @@ a:active {
 
 .right-panel {
     /* margin-top: 33px; */
-    width: auto;
+    /* width: auto; */
     background-color: transparent;
     border-color: #e1e1e1;
     border: 10px gray;
@@ -207,7 +213,7 @@ a:active {
     font: bold 16px 'Delius', cursive;
 }
 
-.skills h3{
+.skills h3 {
     font: bold 16px 'Delius', cursive;
 }
 
