@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Delius&display=swap');
+
+
+body {
+    background-color: #e8e8e8;
+    font: normal 16px 'Playfair Display', serif;
+}
+
+#crtBgShape1,
+#crtBgShape2 {
+    position: fixed;
+    z-index: -1;
+}
+
+#crtBgShape1 {
+    top: 0;
+    left: 0;
+    fill: #d0d0d0;
+}
+
+#crtBgShape2 {
+    right: -100px;
+    top: -100px;
+    fill: #2EB474;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    display: block;
+}
+
+/* @media (min-width: 992px) {
+    .wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+} */
+
+.container {
+    display: flex;
+    margin: auto;
+    padding-top: 33px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        display: block;
+        text-align: center;
+    }
+}
+
+.left-panel {}
+
+.avatar {
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+}
+
+.info {
+    align-content: center;
+    display: block;
+    margin-right: 20px;
+    box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);
+}
+
+.info-header {
+    background: #2EB474;
+    padding: 20px 20px 20px;
+    color: #ffffff;
+}
+
+.info-text {
+    text-align: center;
+    font: normal 16px 'Cabin Sketch', cursive;
+}
+
+.info-text h3 {
+    margin: 10px 0;
+}
+
+.fio {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.fio h2 {
+    margin: 0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lang-img {
+    width: 27px;
+    height: 27px;
+}
+
+.contacts {
+    padding: 20px 20px 20px;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contacts i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: black;
+}
+
+.contacts h2,
+h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font: 16px 'Delius', cursive;
+}
+
+.hobby {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobby-items {
+    display: block;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+}
+
+.hobby-img {
+    margin: auto;
+    display: block;
+    width: 43px;
+    height: 43px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: blue;
+}
+
+/* a:visited {
+    color: rgb(47, 21, 73);
+} */
+
+.right-panel {
+    /* margin-top: 33px; */
+    width: auto;
+    background-color: transparent;
+    border-color: #e1e1e1;
+    border: 10px gray;
+}
+
+.about-me h3 {
+    font: normal 16px 'Delius', cursive;
+}
+
+.company {
+    vertical-align: top;
+    padding: 3px;
+}
+
+.company-name h3 {
+    vertical-align: top;
+    margin-top: 0;
+    margin-right: 70px;
+    font: bold 23px 'Delius', cursive;
+}
+
+.position {
+    vertical-align: top;
+    padding: 3px;
+}
+
+.position p {
+    vertical-align: top;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font: bold 16px 'Delius', cursive;
+}
+
+.description p {
+    font: normal 16px 'Delius', cursive;
+}
+
+.period p {
+    width: auto;
+    white-space: nowrap;
+    font: bold 16px 'Delius', cursive;
+}
+
+.skills h3{
+    font: bold 16px 'Delius', cursive;
+}
+
+.card {
+    background-color: white;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    /* border-radius: 20px; */
+    font: normal 16px 'Cabin Sketch', cursive;
+}
+
+.card h2 {
+    font-size: 30px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3) {
+    color: rgb(8, 7, 48);
+}
+
+.list {
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.list li {
+    margin-bottom: 5px;
+}
