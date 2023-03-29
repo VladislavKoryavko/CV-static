@@ -36,46 +36,29 @@ body {
     padding-top: 33px;
 }
 
-.card {
-    margin-bottom: 20px;
-    box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);
-    background-color: white;
-    padding: 20px 20px;
-}
-
-.card-name h2 {
-    font-size: 43px;
-    margin: 15px 0px;
-    color: #2EB474;
-    font-weight: bold;
-    font-family: 'Cabin Sketch', cursive;
-}
-
-.left-panel {
-    display: inline-block;
+.face-panel {
     margin-right: 20px;
     margin-bottom: 20px;
 }
 
 .avatar {
-    margin: auto;
-    width: 250px;
-    height: 250px;
-    border-radius: 125px;
+    width: 100%;
+    border-radius: 50%;
 }
 
 .info {
-    display: block;
+    /* display: block; */
     box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);
 }
 
 .info-header {
     background: #2EB474;
-    padding: 20px 25px;
+    padding: 10% 10% 1% 10%;
     color: #ffffff;
 }
 
 .info-text {
+    width: 100%;
     text-align: center;
     font: normal 22px 'Cabin Sketch', cursive;
 }
@@ -85,18 +68,14 @@ body {
 }
 
 .fio {
-    font-size: 20px;
+    margin-top: 5px;
+    font-size: 27px;
     text-transform: uppercase;
 }
 
-.fio h2 {
-    margin: 0;
-}
-
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.speciality {
+    margin: 5px 0;
+    font-size: 23px;
 }
 
 .lang-img {
@@ -106,45 +85,52 @@ section {
 }
 
 .contacts {
-    padding: 20px 20px 20px;
+    padding: 10px 10px;
     background-color: white;
     text-align: center;
-    font-weight: bold;
+    font-size: 19px;
+    font-family: 'Delius', cursive;
 }
 
-.contacts i {
-    font-size: 16px;
+.contacts .material-icons {
+    font-size: 17px;
     margin-right: 5px;
-    color: black;
 }
 
-.contacts h2,
-.contacts h4 {
-    margin-top: 0;
-    margin-bottom: 5px;
-    font: 19px 'Delius', cursive;
-}
-
-.hobby {
+.contact-item {
+    margin: 5px 0;
     display: flex;
-    flex-wrap: wrap;
-    margin: auto;
     justify-content: center;
     align-items: center;
 }
 
-.hobby-items {
-    display: block;
-    padding: 10px;
-    width: 150px;
-    text-align: center;
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    padding: 20px 20px;
 }
 
-.hobby-img {
-    margin: auto;
-    display: block;
-    width: 43px;
-    height: 43px;
+.card-header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    font-size: 43px;
+    margin-bottom: 15px;
+    color: #2EB474;
+    font-weight: bold;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.card-name {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.decoration {
+    height: 29px;
 }
 
 a {
@@ -161,29 +147,21 @@ a:active {
 }
 
 .right-panel {
-    background-color: transparent;
-    border-color: #e1e1e1;
-    border: 10px gray;
+    text-align: center;
 }
 
-.about-me h3 {
+.about-me {
     font: normal 16px 'Delius', cursive;
 }
 
 .place-of-work {
-    margin-bottom: 30px;
-    display: flex;
-    text-align: center;
+    margin: 10px 0;
     font-family: 'Delius', cursive;
 }
 
 .place-of-work h2,
 h3 {
     margin: 0px;
-}
-
-.company-with-period {
-    text-align: center;
 }
 
 .company-name {
@@ -199,11 +177,6 @@ h3 {
 
 .position {
     padding: 0 10px;
-    flex-grow: 3;
-}
-
-.position h2 {
-    padding: 0px 5px;
     font-size: 20px;
     font-weight: normal;
 }
@@ -218,23 +191,28 @@ h3 {
     margin-top: 5px;
 }
 
+.seporator {
+    margin: 0 10%;
+    width: 80%;
+}
 
-.skills h3 {
-    font: bold 16px 'Delius', cursive;
+
+.skills {
+    font: normal 21px 'Delius', cursive;
 }
 
 
 .educational-institution {
     font-family: 'Delius', cursive;
-    margin-bottom: 30px;
+    margin: 20px 0;
 }
 
-.educational-institution-name h3{
+.educational-institution-name h3 {
     font-size: 23px;
 }
 
 .achievements {
-    margin-left: 20px;
+    margin-top: 10px;
 }
 
 .achievements h3 {
@@ -242,38 +220,80 @@ h3 {
     font-weight: bold;
 }
 
-.achievements div {
-    margin-left: 20px;
-}
-
 .achievements h4 {
-    margin-left: 30px;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.achievements-level h3{
+.achievements-level h3 {
     font-weight: normal;
     font-size: 19px;
 }
 
-.achievements-level h4{
+.achievements-level h4 {
     font-weight: normal;
     font-size: 17px;
 }
 
 
+.hobby {
+    display: flex;
+    justify-content: center;
+}
+
+.hobby-items {
+    padding: 10px;
+    width: 125px;
+}
+
+.hobby-img {
+    margin: auto;
+    display: block;
+    width: 43px;
+    height: 43px;
+}
+
+
 @media (max-width: 1025px) {
     .container {
+        padding: 0;
         display: block;
         text-align: center;
     }
 
-    .left-panel {
-        margin-right: 0px;
+    .face-panel {
+        margin: 5% 10%;
     }
 
-    .place-of-work {
-        display: block;
+    .language-skills {
+        margin: 2%;
+    }
+
+    .lang-img {
+        margin: 2%;
+        width: 10%;
+        height: 10%;
+    }
+
+    .fio {
+        font-size: 5vw;
+    }
+
+    .speciality {
+        font-size: 4vw;
+    }
+
+    .contacts {
+        padding: 2%;
+        font-size: 3vw;
+    }
+
+    .contacts .material-icons {
+        font-size: 3vw;
+    }
+
+    .seporator {
+        margin: 0;
+        width: 100%;
     }
 }
