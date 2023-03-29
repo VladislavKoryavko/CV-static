@@ -28,15 +28,7 @@ body {
 
 .wrapper {
     box-sizing: border-box;
-    display: block;
 }
-
-/* @media (min-width: 992px) {
-    .wrapper {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-} */
 
 .container {
     display: flex;
@@ -44,20 +36,25 @@ body {
     padding-top: 33px;
 }
 
-.left-panel {
-    margin-right: 20px;
+.card {
     margin-bottom: 20px;
+    box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    padding: 20px 20px;
 }
 
-@media (max-width: 1025px) {
-    .container {
-        display: block;
-        text-align: center;
-    }
+.card-name h2 {
+    font-size: 43px;
+    margin: 15px 0px;
+    color: #2EB474;
+    font-weight: bold;
+    font-family: 'Cabin Sketch', cursive;
+}
 
-    .left-panel {
-        margin-right: 0px;
-    }
+.left-panel {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .avatar {
@@ -68,20 +65,19 @@ body {
 }
 
 .info {
-    align-content: center;
     display: block;
     box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);
 }
 
 .info-header {
     background: #2EB474;
-    padding: 20px 20px 20px;
+    padding: 20px 25px;
     color: #ffffff;
 }
 
 .info-text {
     text-align: center;
-    font: normal 16px 'Cabin Sketch', cursive;
+    font: normal 22px 'Cabin Sketch', cursive;
 }
 
 .info-text h3 {
@@ -104,6 +100,7 @@ section {
 }
 
 .lang-img {
+    margin: 5px;
     width: 27px;
     height: 27px;
 }
@@ -122,10 +119,10 @@ section {
 }
 
 .contacts h2,
-h4 {
+.contacts h4 {
     margin-top: 0;
     margin-bottom: 5px;
-    font: 16px 'Delius', cursive;
+    font: 19px 'Delius', cursive;
 }
 
 .hobby {
@@ -163,13 +160,7 @@ a:active {
     color: blue;
 }
 
-/* a:visited {
-    color: rgb(47, 21, 73);
-} */
-
 .right-panel {
-    /* margin-top: 33px; */
-    /* width: auto; */
     background-color: transparent;
     border-color: #e1e1e1;
     border: 10px gray;
@@ -179,75 +170,110 @@ a:active {
     font: normal 16px 'Delius', cursive;
 }
 
-.company {
-    vertical-align: top;
-    padding: 3px;
+.place-of-work {
+    margin-bottom: 30px;
+    display: flex;
+    text-align: center;
+    font-family: 'Delius', cursive;
 }
 
-.company-name h3 {
-    vertical-align: top;
-    margin-top: 0;
-    margin-right: 70px;
-    font: bold 23px 'Delius', cursive;
+.place-of-work h2,
+h3 {
+    margin: 0px;
+}
+
+.company-with-period {
+    text-align: center;
+}
+
+.company-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.period h3 {
+    font-size: 18px;
+    font-weight: normal;
+    word-wrap: nowrap;
 }
 
 .position {
-    vertical-align: top;
-    padding: 3px;
+    padding: 0 10px;
+    flex-grow: 3;
 }
 
-.position p {
-    vertical-align: top;
-    margin-top: 0;
-    margin-bottom: 10px;
-    font: bold 16px 'Delius', cursive;
+.position h2 {
+    padding: 0px 5px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.description {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 5px;
 }
 
 .description p {
-    font: normal 16px 'Delius', cursive;
+    margin-top: 5px;
 }
 
-.period p {
-    width: auto;
-    white-space: nowrap;
-    font: bold 16px 'Delius', cursive;
-}
 
 .skills h3 {
     font: bold 16px 'Delius', cursive;
 }
 
-.card {
-    background-color: white;
-    padding: 15px 20px;
-    margin-bottom: 20px;
-    /* border-radius: 20px; */
-    font: normal 16px 'Cabin Sketch', cursive;
+
+.educational-institution {
+    font-family: 'Delius', cursive;
+    margin-bottom: 30px;
 }
 
-.card h2 {
-    font-size: 30px;
+.educational-institution-name h3{
+    font-size: 23px;
 }
 
-.table {
-    width: 100%;
+.achievements {
+    margin-left: 20px;
 }
 
-.table td {
-    padding-bottom: 10px;
+.achievements h3 {
+    font-size: 21px;
     font-weight: bold;
 }
 
-.table td:nth-child(2),
-.table td:nth-child(3) {
-    color: rgb(8, 7, 48);
+.achievements div {
+    margin-left: 20px;
 }
 
-.list {
-    padding: 0 20px;
-    font-weight: bold;
+.achievements h4 {
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.list li {
-    margin-bottom: 5px;
+.achievements-level h3{
+    font-weight: normal;
+    font-size: 19px;
+}
+
+.achievements-level h4{
+    font-weight: normal;
+    font-size: 17px;
+}
+
+
+@media (max-width: 1025px) {
+    .container {
+        display: block;
+        text-align: center;
+    }
+
+    .left-panel {
+        margin-right: 0px;
+    }
+
+    .place-of-work {
+        display: block;
+    }
 }
