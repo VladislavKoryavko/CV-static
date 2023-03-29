@@ -276,20 +276,24 @@ h3 {
     }
 
     .fio {
-        font-size: 5vw;
+        font-size: 7vw;
     }
 
     .speciality {
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     .contacts {
         padding: 2%;
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .contacts .material-icons {
-        font-size: 3vw;
+        font-size: 4vw;
+    }
+
+    .card-name {
+        font-size: 7vw;
     }
 
     .seporator {
