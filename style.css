@@ -4,6 +4,7 @@
 
 
 body {
+    margin: 20px;
     background-color: #e8e8e8;
     font: normal 16px 'Playfair Display', serif;
 }
@@ -33,7 +34,6 @@ body {
 .container {
     display: flex;
     margin: auto;
-    padding-top: 33px;
 }
 
 .face-panel {
@@ -61,10 +61,6 @@ body {
     width: 100%;
     text-align: center;
     font: normal 22px 'Cabin Sketch', cursive;
-}
-
-.info-text h3 {
-    margin: 10px 0;
 }
 
 .fio {
@@ -151,6 +147,7 @@ a:active {
 }
 
 .about-me {
+    margin-bottom: 15px;
     font: normal 16px 'Delius', cursive;
 }
 
@@ -178,7 +175,7 @@ h3 {
 .position {
     padding: 0 10px;
     font-size: 20px;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .description {
